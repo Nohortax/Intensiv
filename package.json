@@ -1,0 +1,26 @@
+{
+  "name": "intensiv",
+  "version": "1.0.0",
+  "description": "Intensiv",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html --public-url ./",
+    "clean": "rimraf dist .cache"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nohortax/Intensiv.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nohortax/Intensiv/issues"
+  },
+  "homepage": "https://github.com/Nohortax/Intensiv#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-purgecss": "^3.0.0"
+  }
+}
