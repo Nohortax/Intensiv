@@ -1,1 +1,1 @@
-{"version":3,"sources":["scss/app.scss"],"names":[],"mappings":"AAAA","file":"app.66d5da61.css","sourceRoot":"../src","sourcesContent":[""]}
+{"version":3,"sources":["scss/galaxy/modules/_init.scss"],"names":[],"mappings":"AAIA;EACI","file":"app.66d5da61.css","sourceRoot":"../src","sourcesContent":["\n\n\n\n* {\n    box-sizing: border-box;\n}\n"]}

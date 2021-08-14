@@ -1,62 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THIS IS INTENSIV'</title>
+    <title>ELEMENTS REFERENCE</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" >
     <link rel="stylesheet" href="./scss/app.scss">
-    <link rel="stylesheet" href="index.html">
-    <link rel="stylesheet" href="generic.html">
 </head>
+
 <body>
-    <header>
+    <header class="bodyHeader container grid">
         <div class="header_chose">intensiv'</div> <!-- COMPRENDRE CE QUE C'EST !! -->
 
-        <nav>
+        <input type="checkbox" id="hamburgerCheckbox" />
+        <label for="hamburgerCheckbox" id="hamburgerLabel" ></label>
+        <nav class="bodyHeader_menu">
             <ul>
-                <li><a href="index.html">This is intensiv'</a></li>
-                <li><a href="generic.html">generic page</a></li>
-                <li><a href="elements.html">elements</a></li>
+                <li class="header_menu__item"><a href="index.html">This is intensiv'</a></li>
+                <li class="header_menu__item"><a href="generic.html">generic page</a></li>
+                <li class="header_menu__item"><a href="elements.html">elements reference</a></li>
             </ul>
         </nav>
     </header>
     
-    <main>
-        <h1 class="main_title1">elements reference</h1>
+    <main class="wrapper">
+        <header class="mainHeader">
+            <h1 class="mainHeader_title1">elements reference</h1>
+        </header>
+        
 
         <section>
             <h2 class="main_title2">colors</h2>
-            <ul class="main_list">
-                <li class="main_list_item">#18BFEF</li>
-                <li class="main_list_item">#F6F6F6</li>
-                <li class="main_list_item">#717981</li>
-                <li class="main_list_item">#4E403D</li>
-                <li class="main_list_item">#212931</li>
+            <ul class="color_list">
+                <li>#18BFEF</li>
+                <li>#717981</li>
+                <li>#4E403D</li>
+                <li>#F6F6F6</li>
+                <li>#212931</li>
             </ul>
         </section>
 
         <section>
             <h2 class="main_title2">text</h2>
-        <div class="title2_infos"> - "merriweather", georgia, serif | #212931</div>
-        <p>
-            This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>. This is <sup>superscript</sup> text and this is <sub>subscript</sub> text. <br>
-            This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, this is a <a href="#">link</a>
-        </p>
+            <div class="title2_infos"> - "merriweather", georgia, serif | #212931</div>
+            <p>
+                This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>. 
+                This is <sup>superscript</sup> text and this is <sub>subscript</sub> text. <br>
+                This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, this is a <a href="#">link</a>
+            </p>
         </section>
 
         <section>
             <h2 class="main_title2">headers</h2>
-        <div class="title2_infos"> - "source sans pro", helvetica, sans-serif | #212931</div>
-        <h1>heading level 1</h1>
-        <h2>heading level 2</h2>
-        <h3>heading level 3</h3>
-        <h4>heading level 4</h4>
-        <h5>heading level 5</h5>
-        <h6>heading level 6</h6>
-        </section>
+            <div class="title2_infos"> - "source sans pro", helvetica, sans-serif | #212931</div>
+            <h1 class="h1">heading level 1</h1>
+            <h2 class="h2">heading level 2</h2>
+            <h3 class="h3">heading level 3</h3>
+            <h4 class="h4">heading level 4</h4>
+            <h5 class="h5">heading level 5</h5>
+            <h6 class="h6">heading level 6</h6>
+        
+            <hr>
 
-        <section>
             <h2 class="main_title2">heading with a subtitle</h2>
             <div class="subtitle">Lorem, ipsum dolor sit amet nullam id egestas urna aliquam</div>
             <p>
@@ -85,98 +91,416 @@
         <section>
             <h2 class="main_title2">lists</h2>
 
-            <div class="main_"> <!-- TROUVER CLASS DIV !!! -->
+            <div class="blockLists"> 
                 <h3 class="main_title3">unordered - ul</h3>
-                <ul class="main_list1">
-                    <li class="main_list__item">Velit aliquet sagittis id.</li>
-                    <li class="main_list__item">Maecenas at risus sit.</li>
-                    <li class="main_list__item">Sed porta augue nisl.</li>
-                    <li class="main_list__item">Integer elementum nunc laoreet.</li>
+                <ul class="blockList1">
+                    <li>Maecenas at risus sit.</li>
+                    <li>Sed porta augue nisl.</li>
+                    <li>Integer elementum nunc laoreet.</li>
+                    <li>Velit aliquet sagittis id.</li>
                 </ul>
 
                 <h3 class="main_title3">alternate - ul.alternate</h3>
-                <ul class="main_list2">
-                    <li class="main_list__item">Velit aliquet sagittis id.</li>
-                    <li class="main_list__item">Maecenas at risus sit.</li>
-                    <li class="main_list__item">Sed porta augue nisl.</li>
-                    <li class="main_list__item">Integer elementum nunc laoreet.</li>
+                <ul class="blockList2">
+                    <li>Velit aliquet sagittis id.</li>
+                    <li>Maecenas at risus sit.</li>
+                    <li>Sed porta augue nisl.</li>
+                    <li>Integer elementum nunc laoreet.</li>
                 </ul>
 
                 <h3 class="main_title3">ordered</h3>
-                <ol class="main_list3">
-                    <li class="main_list__item">Libero hac varius arcu.</li>
-                    <li class="main_list__item">Rutrum semper odio tellus.</li>
-                    <li class="main_list__item">Sodales duis suspendisse aenean.</li>
-                    <li class="main_list__item">Nibh dictum praesent curabitur.</li>
-                    <li class="main_list__item">Mattis ac nisl ac.</li>
+                <ol class="blockList3">
+                    <li>Libero hac varius arcu.</li>
+                    <li>Rutrum semper odio tellus.</li>
+                    <li>Sodales duis suspendisse aenean.</li>
+                    <li>Nibh dictum praesent curabitur.</li>
+                    <li>Mattis ac nisl ac.</li>
                 </ol>
 
                 <h3 class="main_title3">icons</h3>
-                <!-- ICONES ! main_list4 -->
+                <!-- ICONES ! blockList4 -->
+            </div>
 
                 <h3 class="main_title3">definition</h3>
 
-                <ul class="main_list5">
-                    <li class="main_list__item">Item 1
-                        <ul class="main_list__list">
-                            <li class="main_list__list_Item">
+                <ul class="blockList5">
+                    <li class="blockList_item1">Item 1
+                        <ul>
+                            <li>
                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac ullamcorper est. Donec nec 
                                rhoncus purus, quis pulvinar elit. Nullam quis auctor elit. 
                             </li>
                         </ul>
                     </li>
-                    <li class="main_list__item">Item 2
-                        <ul class="main_list__list">
-                            <li class="main_list__list_Item">
+                    <li class="blockList_item2">Item 2
+                        <ul>
+                            <li>
                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac ullamcorper est. Donec nec 
                                rhoncus purus, quis pulvinar elit. Nullam quis auctor elit. 
                             </li>
                         </ul>
                     </li>
-                    <li class="main_list__item">Item 3
-                        <ul class="main_list__list">
-                            <li class="main_list__list_Item">
+                    <li class="blockList_item3">Item 3
+                        <ul>
+                            <li>
                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac ullamcorper est. Donec nec 
                                rhoncus purus, quis pulvinar elit. Nullam quis auctor elit. 
                             </li>
                         </ul>
                     </li>
                 </ul>
-            </div>
 
             <h3 class="main_title3">actions</h3>
             <ul class="main_list6">
-                <li class="main_list__itemsBtn1">
-                    <button class="btn-primary-dark">primary</button>
-                    <button class="btn-default-light">default</button>
+                <li class="actBtn1">
+                    <a href="#" class="btn-primary btn-dark">PRIMARY</a>
+                    <a href="#" class="btn-default btn-light">DEFAULT</a>
                 </li>
-                <li class="main_list__itemsBtn2">
-                    <button class="btn-small-dark">small</button>
-                    <button class="btn-small-light">small</button>
+                <li class="actBtn2">
+                    <a href="#" class="btn-small btn-dark">SMALL</a>
+                    <a href="#" class="btn-small btn-light">SMALL</a>
                 </li>
-                <li class="main_list__itemsBtn3">
-                    <button class="btn-default-dark">default</button>
-                    <button class="btn-default-light">default</button>
+                <li class="actBtn3">
+                    <a href="#" class="btn-default btn-dark">DEFAULT</a>
+                    <a href="#" class="btn-default btn-light">DEFAULT</a>
                 </li>
-                <li class="main_list__itemsBtn4">
-                    <button class="btn-small-dark">small</button>
-                    <button class="btn-small-light">small</button>
+                <li class="actBtn4">
+                    <a href="#" class="btn-small btn-dark">SMALL</a>
+                    <a href="#" class="btn-small btn-light">SMALL</a>
                 </li>
-                <li class="main_list__itemsBtn5">
-                    <button class="btn-default-dark">default</button>
-                    <button class="btn-default-light">default</button>
+                <li class="actBtn5">
+                    <a href="#" class="btn-default btn-dark btn-long">DEFAULT</a>
+                    <a href="#" class="btn-default btn-light btn-long">DEFAULT</a>
                 </li>
-                <li class="main_list__itemsBtn6">
-                    <button class="btn-small-dark">small</button>
-                    <button class="btn-small-light">small</button>
+                <li class="actBtn6">
+                    <a href="#" class="btn-small btn-dark btn-long">SMALL</a>
+                    <a href="#" class="btn-small btn-light btn-long">SMALL</a>
                 </li>
             </ul>
         </section>
 
         <section>
             <h2 class="main_title2">blockquote</h2>
+            <blockquote>
+                    Etiam a rutrum neque, et pulvinar nulla. Aliquam non dui a est egestas ultrices sit amet tincidunt odio. 
+                    Nunc tincidunt justo metus, efficitur feugiat urna suscipit sit amet. Donec aliquet mattis augue, non 
+                    posuere nisi pellentesque vitae. Pellentesque auctor urna libero.
+            </blockquote>
+        </section>
+
+        <section>
+            <h2 class="main_title2">table</h2>
+            <h3 class="main_title3">default</h3> <!-- J'ai hésité à le mettre en caption -->
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">name</th>
+                        <th scope="col">description</th>
+                        <th scope="col">price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Item 1</td>
+                        <td>Integer sed tortor ut augue.</td>
+                        <td>29.99</td>
+                    </tr>
+                    <tr>
+                        <td>Item 2</td>
+                        <td>Fusce urna bibendum lectus lacinia. </td>
+                        <td>19.99</td>
+                    </tr>
+                    <tr>
+                        <td>Item 3</td>
+                        <td>Integer in est volutpat pharetra.</td>
+                        <td>29.99</td>
+                    </tr>
+                    <tr>
+                        <td>Item 4</td>
+                        <td>Quisque pulvinar diam et ante.</td>
+                        <td>19.99</td>
+                    </tr>
+                    <tr>
+                        <td>Item 5</td>
+                        <td>Curabitur auctor varius velit.</td>
+                        <td>29.99</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">100.00</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 class="main_title3">alternate</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">name</th>
+                        <th scope="col">description</th>
+                        <th scope="col">price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Item 1</td>
+                        <td>Integer sed tortor ut augue.</td>
+                        <td>29.99</td>
+                    </tr>
+                    <tr>
+                        <td>Item 2</td>
+                        <td>Fusce urna bibendum lectus lacinia. </td>
+                        <td>19.99</td>
+                    </tr>
+                    <tr>
+                        <td>Item 3</td>
+                        <td>Integer in est volutpat pharetra.</td>
+                        <td>29.99</td>
+                    </tr>
+                    <tr>
+                        <td>Item 4</td>
+                        <td>Quisque pulvinar diam et ante.</td>
+                        <td>19.99</td>
+                    </tr>
+                    <tr>
+                        <td>Item 5</td>
+                        <td>Curabitur auctor varius velit.</td>
+                        <td>29.99</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">100.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2 class="main_title2">buttons</h2>
+            <ul class="buttonList">
+                <li class="btn1">
+                    <button class="btn-primary btn-dark">PRIMARY</button>
+                    <button class="btn-default btn-light">DEFAULT</button>
+                </li>
+                <li class="btn2">
+                    <button class="btn-large btn-dark">LARGE</button>
+                    <button class="btn-default btn-light">DEFAULT</button>
+                    <button class="btn-small btn-light">SMALL</button>
+                </li>
+                <li class="btn3">
+                    <button class="btn-fit btn-dark btn-long">FIT</button>
+                    <button class="btn-fit btn-light btn-long">FIT</button>
+                </li>
+                <li class="btn4">
+                    <button class="btn-fitSmall btn-light btn-long">FIT + SMALL</button>
+                    <button class="btn-fitSmall btn-dark btn-long">FIT + SMALL</button>
+                </li>
+                <li class="btn5">
+                    <button class="btn-icon btn-dark">ICON</button> <!-- ADD ICON !!!! -->
+                    <button class="btn-icon btn-light">ICON</button> <!-- ADD ICON !!!! -->
+                </li>
+                <li class="btn6">
+                    <button class="btn-primary btn-halfDark">PRIMARY</button>
+                    <button class="btn-default btn-halfLight">DEFAULT</button>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="main_title2">form</h2>
+            <form action="traitement.php" method="post">
+            <div class="formDetails">
+                <input type="text" name="Name" placeholder="Name" />
+                <input type="email" name="Email" placeholder="Email" /> 
+            </div>
+            <div class="formSelect">
+                <select name="category">
+                    <option disabled="disabled" selected="selected">- Category -</option>
+                    <option value="html">HTML5</option>
+                    <option value="css">CSS3</option>
+                </select>
+            </div>
+            <div class="formRadio">
+                <input type="radio" name="state" value="l" checked="checked" /> Low 
+                <input type="radio" name="state" value="n" /> Normal 
+                <input type="radio" name="state" value="h" /> High
+            </div>
+            <div class="formCheck">
+                <label for="copy">
+                    <input type="checkbox" name="copy" id="copy" />
+                    Email me a copy
+                </label>
+                <label for="human">
+                    <input type="checkbox" name="human" id="human" checked="checked" />
+                    I am a human
+                </label>
+            </div>
+
+            <textarea name="message" cols="80" rows="10" placeholder="Enter your message"></textarea>
+
+            <div>
+                <button type="submit" class="btn-dark btn-submit">SEND MESSAGE</button>
+                <button type="reset" class="btn-light btn-reset">RESET</button>
+            </div>      
+            </form>
+        </section>
+
+        <section>
+            <h2 class="main_title2">image</h2>
+            <h3 class="main_title3">fit</h3>
+            <div class="flexboxes">
+                <img src="https://picsum.photos/600/300" alt="Random picture" class="bigBox">
+                <img src="https://picsum.photos/600/300" alt="Random picture" class="smallBox">
+                <img src="https://picsum.photos/600/300" alt="Random picture" class="smallBox">
+                <img src="https://picsum.photos/600/300" alt="Random picture" class="smallBox">
+                <img src="https://picsum.photos/600/300" alt="Random picture" class="smallBox">
+                <img src="https://picsum.photos/600/300" alt="Random picture" class="smallBox">
+                <img src="https://picsum.photos/600/300" alt="Random picture" class="smallBox">
+                <img src="https://picsum.photos/600/300" alt="Random picture" class="smallBox">
+                <img src="https://picsum.photos/600/300" alt="Random picture" class="smallBox">
+                <img src="https://picsum.photos/600/300" alt="Random picture" class="smallBox">
+            </div>
+
+            <h3 class="main_title3">left & right</h3>
+            <div class="float_left">
+                <img src="https://picsum.photos/200" alt="Random picture">
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porta pharetra lobortis. Proin lobortis 
+                neque consectetur eleifend blandit. Pellentesque suscipit ex quis eleifend mattis. Nulla efficitur felis et 
+                tellus tincidunt venenatis. Integer aliquam tortor metus, et pharetra turpis consectetur sit amet. Donec eu 
+                iaculis leo. Sed blandit, nibh at efficitur tempor, augue ante sagittis augue, id porta purus risus non magna. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ligula enim, tempus non venenatis sed, faucibus 
+                et dolor. Sed ultricies lacinia erat, eget pharetra lectus scelerisque placerat. Maecenas urna urna, vehicula 
+                in orci vitae, ultricies aliquam ante. Phasellus sodales, nulla at consectetur accumsan, ex neque auctor libero, 
+                vel vehicula purus est eu diam. Nunc non feugiat eros.
+            </p>
+
+            <div class="float_right">
+                <img src="https://picsum.photos/200" alt="Random picture">
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porta pharetra lobortis. Proin lobortis 
+                neque consectetur eleifend blandit. Pellentesque suscipit ex quis eleifend mattis. Nulla efficitur felis et 
+                tellus tincidunt venenatis. Integer aliquam tortor metus, et pharetra turpis consectetur sit amet. Donec eu 
+                iaculis leo. Sed blandit, nibh at efficitur tempor, augue ante sagittis augue, id porta purus risus non magna. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ligula enim, tempus non venenatis sed, faucibus 
+                et dolor. Sed ultricies lacinia erat, eget pharetra lectus scelerisque placerat. Maecenas urna urna, vehicula 
+                in orci vitae, ultricies aliquam ante. Phasellus sodales, nulla at consectetur accumsan, ex neque auctor libero, 
+                vel vehicula purus est eu diam. Nunc non feugiat eros.
+            </p>
+        </section>
+
+        <section>
+            <h2 class="main_title2">box</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sollicitudin sem lacus, ut rhoncus magna 
+                lacinia in. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Praesent 
+                tellus lorem, ornare in dui semper, gravida dignissim leo. Nunc tincidunt sollicitudin sem ac sagittis. Ut non 
+                lacus ex. Quisque non felis in quam auctor venenatis. In at elit eu quam porttitor vehicula vel non purus. 
+                Nulla ac purus mauris. Aenean enim nulla, mollis eget convallis eget, euismod in ante. Nunc lacinia libero sit 
+                amet diam venenatis gravida. Sed non ante nibh. Proin luctus mi velit, sed molestie turpis ultricies quis. Donec 
+                sagittis vitae mauris eu euismod. 
+            </p>
+        </section>
+
+        <section>
+            <h2 class="main_title2">preformatted</h2>
+            <pre>
+                i = 0;
+
+                while (!deck.isInOrder()) {
+                    print 'Iteration ' + i;
+                    deck.shuffle();
+                    i++;
+                }
+
+                print 'It took ' + i + ' iterations to sort the deck.';
+            </pre>
         </section>
         
+        <footer>
+            <form action="traitement.php" method="POST">
+                <div class="main_footerFormName">
+                   <label for="name">
+                        NAME <br>
+                        <input type="text" name="name" id="name">
+                    </label> 
+                </div>
+                <div class="main_footerFormEmail">
+                    <label for="email">
+                        EMAIL <br>
+                        <input type="email" name="email" id="email">
+                    </label>
+                </div>
+                <label for="message">
+                    MESSAGE <br>
+                </label>
+                <textarea name="message" id="message" cols="40" rows="5"></textarea>
+                <div>
+                    <button type="submit" class="btn-submit btn-light">SEND MESSAGE</button>
+                </div>
+            </form>
+
+            <ul>
+                <li>ADDRESS</li>
+                <li> 
+                    9 rue Charles Deliège 4247 <br>
+                    Fléron, TN 00000-0000
+                </li>
+            </ul>
+            <ul>
+                <li>PHONE</li>
+                <li><a href="tel:(000)000-0000">(000)000-0000</a></li>
+            </ul>
+            <ul>
+                <li>EMAIL</li>
+                <li><a href="mailto:info@untitled.tld">info@untitled.tld</a></li>
+            </ul>
+            <ul>
+                <li>SOCIAL</li>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-facebook-f"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+                <li><i class="fab fa-github"></i></li>
+            </ul>
+
+            <section>
+                <h2 class="main_footerTitle2">ADDRESS</h2>
+                <address>
+                    9 rue Charles Deliège 4247 <br />
+                    Fléron, TN 00000-0000
+                </address>
+            </section>
+
+            <section>
+                <h2 class="main_footerTitle2e">PHONE</h2>
+                <ul>
+                    <li><a href="tel:(000)000-0000">(000)000-0000</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="main_footerTitle2">EMAIL</h2>
+                <ul>
+                    <li><a href="mailto:info@untitled.tld">info@untitled.tld</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="main_footerTitle2">SOCIAL</h2>
+                <ul>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-facebook-f"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                    <li><i class="fab fa-github"></i></li>
+                </ul>
+            </section>    
+        </footer>
     </main>
+
+    <footer>
+        <p>
+            &copy;UNTITLED | DESIGN: <a href="#">IEPS</a> 
+        </p>
+    </footer>
 </body>
 </html>

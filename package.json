@@ -21,6 +21,7 @@
   "homepage": "https://github.com/Nohortax/Intensiv#readme",
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
-    "parcel-plugin-purgecss": "^3.0.0"
+    "parcel-plugin-purgecss": "^3.0.0",
+    "sass": "^1.37.5"
   }
 }
