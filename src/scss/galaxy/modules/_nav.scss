@@ -34,54 +34,55 @@
             position: fixed;
             top: 0; right: 0;
             z-index: 1;
-
-            background: white;
-            height: 100%;
-            width: 250px;
-            
-            display: flex;
-            flex-flow: column wrap;
-            justify-content: flex-start;
-          
             transform: translateX(100%);
-            transition: all 500ms ease-out; 
-            
-
-            &> ul.nav_pages {
-                display: flex;
-                flex-flow: column wrap; 
-                margin: 5em 2em 1em 2em;
-                &> li:not(:last-child) {
-                    border-bottom: 2px solid #eae6e6;
-                }
-            }
-            &> ul.nav_socialIcons {
-                margin: 1em 1em 0 1.5em;
-            }
-
-            &>ul > li {
-                & a {
-                    color: $font_color;
-                    &:hover {
-                        color: $color_hover;
-                    }
-                }
-                & i {
-                    font-size: $icon_thin_size;
-                    border: $icon_surrounded;
-                    border-radius: $icon_surrounded_radius;
-                    padding: $padding_icon_radius;
-                    &.fa-facebook-f {
-                        padding: .6em .8em;
-                    }
-                    &:hover {
-                        border: 2px solid $color_hover;
-                    }
-                }
-            }
+            transition: all 500ms ease-out;
         }
         &:checked {
             ~ nav {
+                position: fixed;
+                top: 0; right: 0;
+                z-index: 1;
+
+                background: white;
+                height: 100%;
+                width: 250px;
+                
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: flex-start;
+            
+                &> ul.nav_pages {
+                    display: flex;
+                    flex-flow: column wrap; 
+                    margin: 5em 2em 1em 2em;
+                    &> li:not(:last-child) {
+                        border-bottom: 2px solid #eae6e6;
+                    }
+                }
+                &> ul.nav_socialIcons {
+                    margin: 1em 1em 0 1.5em;
+                }
+
+                &>ul > li {
+                    & a {
+                        color: $font_color;
+                        &:hover {
+                            color: $color_hover;
+                        }
+                    }
+                    & i {
+                        font-size: $icon_thin_size;
+                        border: $icon_surrounded;
+                        border-radius: $icon_surrounded_radius;
+                        padding: $padding_icon_radius;
+                        &.fa-facebook-f {
+                            padding: .6em .8em;
+                        }
+                        &:hover {
+                            border: 2px solid $color_hover;
+                        }
+                    }
+                }
                 transform: translateX(0);
             }
             + #hamburgerLabel {
