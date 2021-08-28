@@ -1,7 +1,36 @@
-// COLORS -----
+// COLORS' VARIABLES 
+//-------------------------------
 $color_font: #212931;
-$color_neutre_1: #717981;
-$color_neutre_2: #4E403D;
-$color_background_1: $color_font;
-$color_background_2: #F6F6F6;
+$color_neutral_1: #F6F6F6;
+$color_neutral_2: #717981;
+$color_background_1: #4E403D;
+$color_background_2: $color_font;
 $color_hover: #18BFEF;
+
+$color_block_dim: 70px;
+
+
+// COLOR BLOCKS
+//-------------------------------
+.color-block {
+    width: $color_block_dim;
+    height: $color_block_dim;
+    display: inline-block;
+    line-height: 70px;
+    color: $color_neutral_1;
+    &.color-hover {
+        background: $color_hover;
+    }
+    &.color-neutral-1 {
+        background: $color_neutral_1;
+    }
+    &.color-neutral-2 {
+        background: $color_neutral_2;
+    }
+    &.color-background-1 {
+        background: $color_background_1;
+    }
+    &.color-font {
+        background: $color_font;
+    }
+}

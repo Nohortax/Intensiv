@@ -1,0 +1,71 @@
+
+// CONTENT ALIGNEMENT
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+
+
+// FLEX NAV
+nav {
+    display: flex;
+    justify-content: space-between;
+    &> ul {
+        display: flex;
+        &> li {
+            display: flex;
+        }
+    }
+}
+
+
+// FLEX INFOS TITLES
+.title2-infos {
+    display: flex;
+    align-items: baseline;
+    > h2 {
+        margin-right: $margin_right_font;
+    }
+}
+ 
+
+// ICONS LISTS
+.align-icons {
+    display: flex;
+    flex-direction: column;
+    & ul {
+        display: flex;
+    }
+}
+
+
+// FORM ICONS
+.footer_infos {
+    display: flex;
+    flex-flow: column wrap;
+    &> section.form_align:not(:first-of-type) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        &> ul {
+            display: flex;
+        }
+    }
+}
+
+section.sectAddress {
+    display: flex;
+    align-items: flex-start;
+}

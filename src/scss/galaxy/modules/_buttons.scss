@@ -1,0 +1,98 @@
+// BUTTONS' VARIABLES
+    // LINK
+        $btn_a_decoration: none;
+
+
+    // BORDERS
+        $btn_border: 2px solid #212931;
+        $btn_padding_default: 1em 2em;
+        $btn_padding_small: .7em 1.5em;
+
+        $btn_padding_large: 1.5em 2.5em;
+        $btn_default_long: .4em 0;
+
+
+    // FONTS
+        $btn_font: $font_title;
+        $btn_font_size: .8em;
+        $btn_letter_spacing: .1em;
+        $btn_weight: bold;
+        $btn_dark_background: $color_background_2;
+        $btn_dark_color: #fff;
+        $btn_light_background: #fff;
+        $btn_light_color: $color_font;
+
+    
+    // HOVER
+        $btn_border_hover: 2px solid $color_hover;
+        $btn_color_hover: $color_hover;
+        $btn_background_hover: $color_hover;
+
+    
+    // ICONS
+        $padding_right_icon: .5em;
+
+
+
+// DEFAULT SPECIFICATIONS BTN SANS BALISE BUTTON
+//-------------------------------
+.act-btn, .btn {
+    font-family: $btn_font;
+    font-size: $btn_font_size;
+    letter-spacing: $btn_letter_spacing;
+    font-weight: $btn_weight;
+    text-decoration: $btn_a_decoration;
+    border: $btn_border;
+    padding: $btn_padding_default;
+    &:hover {
+        border: $btn_border_hover;
+    }
+}
+
+.btn-dark {
+    background: $btn_dark_background;
+    color: $btn_dark_color;
+    &:hover {
+        background: $btn_background_hover;
+    }
+}
+
+.btn-light {
+    background: $btn_light_background;
+    color: $btn_light_color;
+    &:hover {
+        color: $btn_color_hover;
+    }
+}
+
+.btn-small {
+    padding: $btn_padding_small;
+}
+
+.btn-long {
+    display: flex;
+    flex-flow: column wrap;
+    a {
+        padding: 0;
+    }
+    .btn-default {
+        padding: $btn_default_long;
+    }
+} 
+
+
+// DEFAULT SPECIFICATIONS BTN AVEC BALISE BUTTON
+//-------------------------------
+.btn-large {
+    padding: $btn_padding_large;
+}
+
+.btn-icon i {
+    padding-right: $padding_right_icon;
+    font-size: 12px;
+}
+
+.btn-disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}

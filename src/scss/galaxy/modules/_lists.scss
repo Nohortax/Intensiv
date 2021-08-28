@@ -1,0 +1,35 @@
+// VARIABLES' LISTS
+//-------------------------------
+    // FONT
+        $line_height_list: $line_height_text;
+
+
+    // STYLE
+        $list_style_none: none;
+
+
+    // PADDING AND MARGIN
+        $padding_list_with: 0 1em;
+        $padding_list_none: 0;
+        $padding_li_horizontal: .1rem .5rem;
+        $margin_li_horizontal: 0 1rem;
+
+
+// DEFAULT SPECIFICATIONS
+//-------------------------------
+li {
+    line-height: $line_height_list;
+}
+
+.lists_listWith, .list_item_list {
+    padding: $padding_list_with;
+    & li {
+        padding: $padding_list_with;
+    }
+}
+
+
+.lists_listNone, .list_item_list {
+    list-style-type: $list_style_none;
+    padding: $padding_list_none;
+}

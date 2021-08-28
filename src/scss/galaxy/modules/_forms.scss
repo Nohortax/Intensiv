@@ -1,0 +1,127 @@
+// FORMS' VARIABLES
+    // PADDINGS AND MARGINS
+        $form_text_padding: .5em 1em;
+        $check_padding_before: .3em .9em;
+
+
+    // BORDER
+        $form_border: 2px solid #eae6e6;
+        $border_radiuso: 50%;
+        $color_hr: #eae6e6;
+
+
+    // FONTS
+        $form_color: $color_neutral_2;
+
+
+
+// DEFAULT SPECIFICATIONS
+//-------------------------------
+.formDetails > input, .formSelect > select {
+    padding: $form_text_padding;
+}
+
+.formDetails > input, .formSelect > select, .textarea {
+    border-radius: 0;
+    border: $form_border;
+}
+
+.formSelect > select {
+    display: block;
+    width: 100%;
+}
+
+.textarea {
+    display: block;
+    width: 100%;
+    overflow: scroll;
+    padding: 1.5em 1em;
+}
+ 
+.radio-label, .checkbox-label {
+    display: inline-block;
+    &::before {
+        content: '';
+        border: $form_border;
+        padding: $check_padding_before;
+        margin-right: 1em;
+        
+    }
+}
+
+.radio-label::before {
+    border-radius: $border_radiuso;
+}
+
+.radio-custom, .checkbox-custom {
+    display: none;
+    &:checked {
+        + .radio-label::before, + .checkbox-label::before {
+            background: $color_background_2;
+            color: white;
+            content: '\f00c';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            padding: .4em;
+            
+        }
+    }
+}
+
+
+// FOOTER FORM 
+//-------------------------------
+.footer_form, .footer_infos {
+    color: $form_color;
+}
+
+.footer_form {
+    padding: 2rem 3rem;
+}
+
+.field-label, .footer_title2 {
+    font-family: $font_title;
+    font-size: $font_size_h5;
+}
+
+.field-form {
+    display: block;
+    width: 100%;
+    background: $color_neutral_1;
+    border: $form_border;
+    margin: 1em 0 2em 0;
+}
+
+#name, #email {
+    height: 3em;
+}
+
+.footer_infos {
+    border-left: $form_border;
+    &> section.form_align {
+        padding: 2rem 3rem;
+    }
+    & ul.form_list {
+        list-style: $list_style_none;
+        padding: $padding_list_none;
+        margin-left: 2rem;
+        &> li {
+            padding: 0 .5em;
+            & a {
+                color: $form_color;
+            }
+        }
+    }
+}
+
+.form_hr {
+    background: $color_hr;
+    margin: 0;
+}
+
+.address {
+    margin-left: 2rem;
+    font-style: normal;
+    line-height: 2em;
+    font-size: $font_size_text;
+}

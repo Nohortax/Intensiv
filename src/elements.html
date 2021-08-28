@@ -5,55 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ELEMENTS REFERENCE</title>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" >
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css" >
     <link rel="stylesheet" href="./scss/app.scss">
 </head>
 
-<body>
-    <header class="bodyHeader container grid">
-        <div class="header_chose">intensiv'</div> <!-- COMPRENDRE CE QUE C'EST !! -->
-
+<body class="container">
+    <header class="main-header container grid">
+        <div class="header_intensiv text-center">
+            <a href="index.html">intensiv'</a> 
+        </div>  
+        
         <input type="checkbox" id="hamburgerCheckbox" />
-        <label for="hamburgerCheckbox" id="hamburgerLabel" ></label>
-        <nav class="bodyHeader_menu">
-            <ul>
-                <li class="header_menu__item"><a href="index.html">This is intensiv'</a></li>
-                <li class="header_menu__item"><a href="generic.html">generic page</a></li>
-                <li class="header_menu__item"><a href="elements.html">elements reference</a></li>
+        <label for="hamburgerCheckbox" id="hamburgerLabel"></label>
+        
+        
+        <nav class="container">
+            <ul class="nav_pages">
+                <li><a href="index.html">This is intensiv'</a></li>
+                <li><a href="generic.html">generic page</a></li>
+                <li id="isActive"><a href="elements.html">elements reference</a></li>
+            </ul>
+            <ul class="nav_socialIcons">
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-github"></i></a></li>
             </ul>
         </nav>
     </header>
     
-    <main class="wrapper">
-        <header class="mainHeader">
-            <h1 class="mainHeader_title1">elements reference</h1>
+    <main class="main-content container">
+        <header>
+            <h1 class="text-center">elements <br> reference</h1>
         </header>
         
 
         <section>
             <h2 class="main_title2">colors</h2>
-            <ul class="color_list">
-                <li>#18BFEF</li>
-                <li>#717981</li>
-                <li>#4E403D</li>
-                <li>#F6F6F6</li>
-                <li>#212931</li>
-            </ul>
+            <div class="color-block color-hover text-center">#18BFEF</div>
+            <div class="color-block color-neutral-1 text-center">#F6F6F6</div>
+            <div class="color-block color-neutral-2 text-center">#717981</div>
+            <div class="color-block color-background-1 text-center">#4E403D</div>
+            <div class="color-block color-font text-center">#212931</div>
         </section>
 
+        <hr>
+
         <section>
-            <h2 class="main_title2">text</h2>
-            <div class="title2_infos"> - "merriweather", georgia, serif | #212931</div>
+            <div class="title2-infos">
+                <h2>text</h2>
+                <p>- "merriweather", georgia, serif | #212931</p>
+            </div>
+            
             <p>
                 This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>. 
                 This is <sup>superscript</sup> text and this is <sub>subscript</sub> text. <br>
-                This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, this is a <a href="#">link</a>
+                This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, this is a <a href="#">link.</a>
             </p>
         </section>
 
+        <hr>
+
         <section>
-            <h2 class="main_title2">headers</h2>
-            <div class="title2_infos"> - "source sans pro", helvetica, sans-serif | #212931</div>
+            <div class="title2-infos">
+                <h2>headers</h2>
+                <p>- "source sans pro", helvetica, sans-serif | #212931</p>
+            </div>
+            
             <h1 class="h1">heading level 1</h1>
             <h2 class="h2">heading level 2</h2>
             <h3 class="h3">heading level 3</h3>
@@ -63,23 +81,24 @@
         
             <hr>
 
-            <h2 class="main_title2">heading with a subtitle</h2>
+            <h2>heading with a subtitle</h2>
             <div class="subtitle">Lorem, ipsum dolor sit amet nullam id egestas urna aliquam</div>
-            <p>
+            
+            <p class="padding_bottom">
                 Iaculis nunc sed augue lacus viverra vitae congue eu consequat ac felis donec et odio pellentesque diam volutpat commodo 
                 sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam 
                 malesuada bibendum arcu vitae elementum curabitur vitae.
             </p>
         
-            <h3 class="main_title3">heading with a subtitle</h3>
+            <h3>heading with a subtitle</h3>
             <div class="subtitle">Lorem, ipsum dolor sit amet nullam id egestas urna aliquam</div>
-            <p>
+            <p class="padding_bottom">
                 Iaculis nunc sed augue lacus viverra vitae congue eu consequat ac felis donec et odio pellentesque diam volutpat commodo 
                 sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam 
                 malesuada bibendum arcu vitae elementum curabitur vitae.
             </p>
 
-            <h4 class="main_title4">heading with a subtitle</h4>
+            <h4>heading with a subtitle</h4>
             <div class="subtitle">Lorem, ipsum dolor sit amet nullam id egestas urna aliquam</div>
             <p>
                 Iaculis nunc sed augue lacus viverra vitae congue eu consequat ac felis donec et odio pellentesque diam volutpat commodo 
@@ -88,112 +107,146 @@
             </p>
         </section>
 
-        <section>
-            <h2 class="main_title2">lists</h2>
+        <hr>
+        
+        <section class="grid">
 
-            <div class="blockLists"> 
-                <h3 class="main_title3">unordered - ul</h3>
-                <ul class="blockList1">
+            <h2>lists</h2>
+
+            <div class="col-m-6"> 
+                <h3>unordered - ul</h3>
+                <ul class="lists_listWith">
                     <li>Maecenas at risus sit.</li>
                     <li>Sed porta augue nisl.</li>
                     <li>Integer elementum nunc laoreet.</li>
                     <li>Velit aliquet sagittis id.</li>
                 </ul>
+            </div>
 
-                <h3 class="main_title3">alternate - ul.alternate</h3>
-                <ul class="blockList2">
-                    <li>Velit aliquet sagittis id.</li>
-                    <li>Maecenas at risus sit.</li>
-                    <li>Sed porta augue nisl.</li>
-                    <li>Integer elementum nunc laoreet.</li>
-                </ul>
-
-                <h3 class="main_title3">ordered</h3>
-                <ol class="blockList3">
+            <div class="col-m-6">
+                <h3>ordered</h3>
+                <ol class="lists_listWith">
                     <li>Libero hac varius arcu.</li>
                     <li>Rutrum semper odio tellus.</li>
                     <li>Sodales duis suspendisse aenean.</li>
                     <li>Nibh dictum praesent curabitur.</li>
                     <li>Mattis ac nisl ac.</li>
                 </ol>
-
-                <h3 class="main_title3">icons</h3>
-                <!-- ICONES ! blockList4 -->
             </div>
 
-                <h3 class="main_title3">definition</h3>
-
-                <ul class="blockList5">
-                    <li class="blockList_item1">Item 1
-                        <ul>
-                            <li>
-                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac ullamcorper est. Donec nec 
-                               rhoncus purus, quis pulvinar elit. Nullam quis auctor elit. 
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="blockList_item2">Item 2
-                        <ul>
-                            <li>
-                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac ullamcorper est. Donec nec 
-                               rhoncus purus, quis pulvinar elit. Nullam quis auctor elit. 
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="blockList_item3">Item 3
-                        <ul>
-                            <li>
-                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac ullamcorper est. Donec nec 
-                               rhoncus purus, quis pulvinar elit. Nullam quis auctor elit. 
-                            </li>
-                        </ul>
-                    </li>
+            <div class="col-m-6">
+                <h3>alternate - ul.alternate</h3>
+                <ul class="lists_listWith">
+                    <li>Velit aliquet sagittis id.</li>
+                    <li>Maecenas at risus sit.</li>
+                    <li>Sed porta augue nisl.</li>
+                    <li>Integer elementum nunc laoreet.</li>
                 </ul>
+            </div>
 
-            <h3 class="main_title3">actions</h3>
-            <ul class="main_list6">
-                <li class="actBtn1">
-                    <a href="#" class="btn-primary btn-dark">PRIMARY</a>
-                    <a href="#" class="btn-default btn-light">DEFAULT</a>
+            <div class="align-icons col-m-6">
+                <h3>icons</h3>
+                <ul class="lists_listNone">
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-facebook-f"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                    <li><i class="fab fa-github"></i></li>
+                    <li><i class="fab fa-dribbble"></i></li>
+                </ul>
+                <ul class="lists_listNone">
+                    <li><i class="fab fa-twitter icon-surrounded"></i></li>
+                    <li><i class="fab fa-facebook-f icon-surrounded fb"></i></li>
+                    <li><i class="fab fa-instagram icon-surrounded"></i></li>
+                    <li><i class="fab fa-github icon-surrounded"></i></li>
+                    <li><i class="fab fa-dribbble icon-surrounded"></i></li>
+                </ul>
+            </div>
+        </section>  
+
+        <section>
+            <h3>definition</h3>
+            <ul class="lists_listNone">
+                <li class="list_item"><h4>Item 1</h4>
+                    <ul class="list_item_list">
+                        <li>
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac ullamcorper est. Donec nec 
+                           rhoncus purus, quis pulvinar elit. Nullam quis auctor elit. Ipsum aliquid sequi fuga quam maxime 
+                           doloribus officia praesentium fugiat tenetur, temporibus omnis illo obcaecati? Velit!
+                        </li>
+                    </ul>
                 </li>
-                <li class="actBtn2">
-                    <a href="#" class="btn-small btn-dark">SMALL</a>
-                    <a href="#" class="btn-small btn-light">SMALL</a>
+                <li class="list_item"><h4>Item 2</h4>
+                    <ul class="list_item_list">
+                        <li>
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac ullamcorper est. Donec nec 
+                           rhoncus purus, quis pulvinar elit. Nullam quis auctor elit. Ipsum aliquid sequi fuga quam maxime 
+                           doloribus officia praesentium fugiat tenetur, temporibus omnis illo obcaecati? Velit!
+                        </li>
+                    </ul>
                 </li>
-                <li class="actBtn3">
-                    <a href="#" class="btn-default btn-dark">DEFAULT</a>
-                    <a href="#" class="btn-default btn-light">DEFAULT</a>
-                </li>
-                <li class="actBtn4">
-                    <a href="#" class="btn-small btn-dark">SMALL</a>
-                    <a href="#" class="btn-small btn-light">SMALL</a>
-                </li>
-                <li class="actBtn5">
-                    <a href="#" class="btn-default btn-dark btn-long">DEFAULT</a>
-                    <a href="#" class="btn-default btn-light btn-long">DEFAULT</a>
-                </li>
-                <li class="actBtn6">
-                    <a href="#" class="btn-small btn-dark btn-long">SMALL</a>
-                    <a href="#" class="btn-small btn-light btn-long">SMALL</a>
+                <li class="list_item"><h4>Item 3</h4>
+                    <ul class="list_item_list">
+                        <li>
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac ullamcorper est. Donec nec 
+                           rhoncus purus, quis pulvinar elit. Nullam quis auctor elit. Ipsum aliquid sequi fuga quam maxime 
+                           doloribus officia praesentium fugiat tenetur, temporibus omnis illo obcaecati? Velit!
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </section>
 
         <section>
-            <h2 class="main_title2">blockquote</h2>
+            <h3>actions</h3>
+            <ul class="lists_listNone grid">
+                <li class="list_btn-horizontal">
+                    <a href="#" class="act-btn btn-dark">PRIMARY</a>
+                    <a href="#" class="act-btn btn-light">DEFAULT</a>
+                </li>
+                <li class="list_btn-horizontal">
+                    <a href="#" class="act-btn btn-small btn-dark">SMALL</a>
+                    <a href="#" class="act-btn btn-small btn-light">SMALL</a>
+                </li>
+                <li class="list_btn-vertical col-m-6">
+                    <a href="#" class="act-btn btn-dark">DEFAULT</a> <br>
+                    <a href="#" class="act-btn btn-light">DEFAULT</a>
+                </li>
+                <li class="list_btn-vertical col-m-6">
+                    <a href="#" class="act-btn btn-small btn-dark">SMALL</a> <br>
+                    <a href="#" class="act-btn btn-small btn-light">SMALL</a>
+                </li>
+                <li class="list_btn-vertical btn-long col-m-6">
+                    <a href="#" class="act-btn btn-default btn-dark text-center">DEFAULT</a> <br>
+                    <a href="#" class="act-btn btn-default btn-light text-center">DEFAULT</a>
+                </li>
+                <li class="list_btn-vertical btn-long col-m-6">
+                    <a href="#" class="act-btn btn-small btn-dark text-center">SMALL</a> <br>
+                    <a href="#" class="act-btn btn-small btn-light text-center">SMALL</a>
+                </li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>blockquote</h2>
             <blockquote>
-                    Etiam a rutrum neque, et pulvinar nulla. Aliquam non dui a est egestas ultrices sit amet tincidunt odio. 
-                    Nunc tincidunt justo metus, efficitur feugiat urna suscipit sit amet. Donec aliquet mattis augue, non 
-                    posuere nisi pellentesque vitae. Pellentesque auctor urna libero.
+                Etiam a rutrum neque, et pulvinar nulla. Aliquam non dui a est egestas ultrices sit amet tincidunt odio. 
+                Nunc tincidunt justo metus, efficitur feugiat urna suscipit sit amet. Donec aliquet mattis augue, non 
+                posuere nisi pellentesque vitae. Pellentesque auctor urna libero. Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Doloribus, nobis? Voluptatibus magnam sed sequi aliquam quam et velit voluptatem 
+                repellendus blanditiis at ut nisi a magni, esse mollitia. Aliquid, a.
             </blockquote>
         </section>
 
+        <hr>
+
         <section>
-            <h2 class="main_title2">table</h2>
-            <h3 class="main_title3">default</h3> <!-- J'ai hésité à le mettre en caption -->
+            <h2>table</h2>
+            <h3>default</h3>
             <table>
                 <thead>
-                    <tr>
+                    <tr class="text-left">
                         <th scope="col">name</th>
                         <th scope="col">description</th>
                         <th scope="col">price</th>
@@ -225,22 +278,25 @@
                         <td>Curabitur auctor varius velit.</td>
                         <td>29.99</td>
                     </tr>
-                    <tr>
-                        <td colspan="3">100.00</td>
-                    </tr>
                 </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2"></td>
+                        <td>100.00</td>
+                    </tr>
+                </tfoot>
             </table>
 
-            <h3 class="main_title3">alternate</h3>
+            <h3>alternate</h3>
             <table>
                 <thead>
-                    <tr>
+                    <tr class="text-left">
                         <th scope="col">name</th>
                         <th scope="col">description</th>
                         <th scope="col">price</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody class="alternate-border">
                     <tr>
                         <td>Item 1</td>
                         <td>Integer sed tortor ut augue.</td>
@@ -266,50 +322,55 @@
                         <td>Curabitur auctor varius velit.</td>
                         <td>29.99</td>
                     </tr>
-                    <tr>
-                        <td colspan="3">100.00</td>
-                    </tr>
                 </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2"></td>
+                        <td>100.00</td>
+                    </tr>
+                </tfoot>
             </table>
         </section>
 
-        <section>
-            <h2 class="main_title2">buttons</h2>
-            <ul class="buttonList">
-                <li class="btn1">
-                    <button class="btn-primary btn-dark">PRIMARY</button>
-                    <button class="btn-default btn-light">DEFAULT</button>
-                </li>
-                <li class="btn2">
-                    <button class="btn-large btn-dark">LARGE</button>
-                    <button class="btn-default btn-light">DEFAULT</button>
-                    <button class="btn-small btn-light">SMALL</button>
-                </li>
-                <li class="btn3">
-                    <button class="btn-fit btn-dark btn-long">FIT</button>
-                    <button class="btn-fit btn-light btn-long">FIT</button>
-                </li>
-                <li class="btn4">
-                    <button class="btn-fitSmall btn-light btn-long">FIT + SMALL</button>
-                    <button class="btn-fitSmall btn-dark btn-long">FIT + SMALL</button>
-                </li>
-                <li class="btn5">
-                    <button class="btn-icon btn-dark">ICON</button> <!-- ADD ICON !!!! -->
-                    <button class="btn-icon btn-light">ICON</button> <!-- ADD ICON !!!! -->
-                </li>
-                <li class="btn6">
-                    <button class="btn-primary btn-halfDark">PRIMARY</button>
-                    <button class="btn-default btn-halfLight">DEFAULT</button>
-                </li>
-            </ul>
-        </section>
+        <hr>
 
         <section>
-            <h2 class="main_title2">form</h2>
-            <form action="traitement.php" method="post">
-            <div class="formDetails">
-                <input type="text" name="Name" placeholder="Name" />
-                <input type="email" name="Email" placeholder="Email" /> 
+            <h2>buttons</h2>
+            <div>
+                <button type="button" class="btn btn-dark">PRIMARY</button>
+                <button type="button" class="btn btn-light">DEFAULT</button>
+            </div>
+            <div>
+                <button type="button" class="btn btn-large btn-dark">LARGE</button>
+                <button type="button" class="btn btn-light">DEFAULT</button>
+                <button type="button" class="btn btn-small btn-light">SMALL</button>
+            </div>
+            <div class="grid">
+                <button type="button" class="col-m-6 btn btn-dark">FIT</button>
+                <button type="button" class="col-m-6 btn btn-light">FIT</button>
+            </div>
+            <div class="grid">
+                <button type="button" class="col-m-6 btn btn-small btn-dark">FIT + SMALL</button>
+                <button type="button" class="col-m-6 btn btn-small btn-light">FIT + SMALL</button>
+            </div>
+            <div>
+                <button type="button" class="btn btn-icon btn-dark"><i class="fas fa-search"></i>ICON</button>
+                <button type="button" class="btn btn-icon btn-light"><i class="fas fa-download"></i>ICON</button>
+            </div> 
+            <div>
+                <button type="button" class="btn btn-dark btn-disabled">PRIMARY</button>
+                <button type="button" class="btn btn-light btn-disabled">DEFAULT</button>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="container">
+            <h2>form</h2>
+            <form action="traitement.php" method="post" class="form">
+            <div class="formDetails grid">
+                <input type="text" name="Name" placeholder="Name" class="col-m-6" />
+                <input type="email" name="Email" placeholder="Email" class="col-m-6" /> 
             </div>
             <div class="formSelect">
                 <select name="category">
@@ -318,52 +379,63 @@
                     <option value="css">CSS3</option>
                 </select>
             </div>
-            <div class="formRadio">
-                <input type="radio" name="state" value="l" checked="checked" /> Low 
-                <input type="radio" name="state" value="n" /> Normal 
-                <input type="radio" name="state" value="h" /> High
+            <div class="formRadio grid">
+                <div class="col-m-4">
+                    <input class="radio-custom" id="low" type="radio" name="state" value="l" checked="checked" />
+                    <label class="radio-label" for="low">Low</label>
+                </div>
+                <div class="col-m-4">
+                    <input class="radio-custom" id="normal" type="radio" name="state" value="n" />
+                    <label class="col-m-4 radio-label" for="normal">Normal</label>
+                </div>
+                <div class="col-m-4">
+                    <input class="radio-custom" id="high" type="radio" name="state" value="h" />
+                    <label class="col-m-4 radio-label" for="high">High</label>
+                </div>  
             </div>
-            <div class="formCheck">
-                <label for="copy">
-                    <input type="checkbox" name="copy" id="copy" />
-                    Email me a copy
-                </label>
-                <label for="human">
-                    <input type="checkbox" name="human" id="human" checked="checked" />
-                    I am a human
-                </label>
+            <div class="formCheck grid">
+                <div class="col-m-6">
+                    <input class="checkbox-custom" type="checkbox" name="copy" id="copy" />
+                    <label class="checkbox-label" for="copy">Email me a copy</label>
+                </div>
+                <div class="col-m-6">
+                    <input class="checkbox-custom" type="checkbox" name="human" id="human" checked="checked" />
+                    <label class="checkbox-label" for="human">I am a human</label>
+                </div>   
             </div>
 
-            <textarea name="message" cols="80" rows="10" placeholder="Enter your message"></textarea>
+            <textarea class="textarea" name="message" rows="15" placeholder="Enter your message"></textarea>
 
             <div>
-                <button type="submit" class="btn-dark btn-submit">SEND MESSAGE</button>
-                <button type="reset" class="btn-light btn-reset">RESET</button>
+                <button type="submit" class="btn btn-dark">SEND MESSAGE</button>
+                <button type="reset" class="btn btn-light">RESET</button>
             </div>      
             </form>
         </section>
 
+        <hr>
+
         <section>
-            <h2 class="main_title2">image</h2>
-            <h3 class="main_title3">fit</h3>
-            <div class="flexboxes">
-                <img src="https://picsum.photos/600/300" alt="Random picture" class="bigBox">
-                <img src="https://picsum.photos/600/300" alt="Random picture" class="smallBox">
-                <img src="https://picsum.photos/600/300" alt="Random picture" class="smallBox">
-                <img src="https://picsum.photos/600/300" alt="Random picture" class="smallBox">
-                <img src="https://picsum.photos/600/300" alt="Random picture" class="smallBox">
-                <img src="https://picsum.photos/600/300" alt="Random picture" class="smallBox">
-                <img src="https://picsum.photos/600/300" alt="Random picture" class="smallBox">
-                <img src="https://picsum.photos/600/300" alt="Random picture" class="smallBox">
-                <img src="https://picsum.photos/600/300" alt="Random picture" class="smallBox">
-                <img src="https://picsum.photos/600/300" alt="Random picture" class="smallBox">
+            <h2>image</h2>
+            <h3>fit</h3>
+            <div class="grid">
+                <img src="https://picsum.photos/600/350" alt="Random picture">
+                <img src="https://picsum.photos/600/350" alt="Random picture" class="col-xs-4">
+                <img src="https://picsum.photos/600/350" alt="Random picture" class="col-xs-4">
+                <img src="https://picsum.photos/600/350" alt="Random picture" class="col-xs-4">
+                <img src="https://picsum.photos/600/350" alt="Random picture" class="col-xs-4">
+                <img src="https://picsum.photos/600/350" alt="Random picture" class="col-xs-4">
+                <img src="https://picsum.photos/600/350" alt="Random picture" class="col-xs-4">
+                <img src="https://picsum.photos/600/350" alt="Random picture" class="col-xs-4">
+                <img src="https://picsum.photos/600/350" alt="Random picture" class="col-xs-4">
+                <img src="https://picsum.photos/600/350" alt="Random picture" class="col-xs-4">
             </div>
 
-            <h3 class="main_title3">left & right</h3>
-            <div class="float_left">
+            <h3>left & right</h3>
+            <div class="float-left">
                 <img src="https://picsum.photos/200" alt="Random picture">
             </div>
-            <p>
+            <p class="text-justify">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porta pharetra lobortis. Proin lobortis 
                 neque consectetur eleifend blandit. Pellentesque suscipit ex quis eleifend mattis. Nulla efficitur felis et 
                 tellus tincidunt venenatis. Integer aliquam tortor metus, et pharetra turpis consectetur sit amet. Donec eu 
@@ -374,10 +446,10 @@
                 vel vehicula purus est eu diam. Nunc non feugiat eros.
             </p>
 
-            <div class="float_right">
+            <div class="float-right">
                 <img src="https://picsum.photos/200" alt="Random picture">
             </div>
-            <p>
+            <p class="text-justify">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porta pharetra lobortis. Proin lobortis 
                 neque consectetur eleifend blandit. Pellentesque suscipit ex quis eleifend mattis. Nulla efficitur felis et 
                 tellus tincidunt venenatis. Integer aliquam tortor metus, et pharetra turpis consectetur sit amet. Donec eu 
@@ -389,9 +461,11 @@
             </p>
         </section>
 
+        <hr>
+
         <section>
-            <h2 class="main_title2">box</h2>
-            <p>
+            <h2>box</h2>
+            <p class="box text-justify">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sollicitudin sem lacus, ut rhoncus magna 
                 lacinia in. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Praesent 
                 tellus lorem, ornare in dui semper, gravida dignissim leo. Nunc tincidunt sollicitudin sem ac sagittis. Ut non 
@@ -402,105 +476,87 @@
             </p>
         </section>
 
+        <hr>
+
         <section>
-            <h2 class="main_title2">preformatted</h2>
+            <h2>preformatted</h2>
             <pre>
-                i = 0;
+i = 0;
 
-                while (!deck.isInOrder()) {
-                    print 'Iteration ' + i;
-                    deck.shuffle();
-                    i++;
-                }
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
 
-                print 'It took ' + i + ' iterations to sort the deck.';
+print 'It took ' + i + ' iterations to sort the deck.';
             </pre>
         </section>
-        
-        <footer>
-            <form action="traitement.php" method="POST">
-                <div class="main_footerFormName">
-                   <label for="name">
-                        NAME <br>
-                        <input type="text" name="name" id="name">
-                    </label> 
-                </div>
-                <div class="main_footerFormEmail">
-                    <label for="email">
-                        EMAIL <br>
-                        <input type="email" name="email" id="email">
-                    </label>
-                </div>
-                <label for="message">
-                    MESSAGE <br>
-                </label>
-                <textarea name="message" id="message" cols="40" rows="5"></textarea>
-                <div>
-                    <button type="submit" class="btn-submit btn-light">SEND MESSAGE</button>
-                </div>
+    </main>
+
+    <footer class="container">
+        <div class="footer_inform grid grid-no-gap">
+            <form action="traitement.php" method="POST" class="footer_form col-l-6">
+               
+                <label class="field-label" for="name">NAME</label> 
+                <input class="field-form" type="text" name="name" id="name">
+                
+                <label class="field-label" for="email">EMAIL</label>
+                <input class="field-form" type="email" name="email" id="email">
+                
+                <label class="field-label" for="message">MESSAGE</label>
+                <textarea class="field-form" name="message" id="message"  rows="7"></textarea>
+                
+                <button type="submit" class="btn form_btn btn-light">SEND MESSAGE</button>
             </form>
 
-            <ul>
-                <li>ADDRESS</li>
-                <li> 
-                    9 rue Charles Deliège 4247 <br>
-                    Fléron, TN 00000-0000
-                </li>
-            </ul>
-            <ul>
-                <li>PHONE</li>
-                <li><a href="tel:(000)000-0000">(000)000-0000</a></li>
-            </ul>
-            <ul>
-                <li>EMAIL</li>
-                <li><a href="mailto:info@untitled.tld">info@untitled.tld</a></li>
-            </ul>
-            <ul>
-                <li>SOCIAL</li>
-                <li><i class="fab fa-twitter"></i></li>
-                <li><i class="fab fa-facebook-f"></i></li>
-                <li><i class="fab fa-instagram"></i></li>
-                <li><i class="fab fa-github"></i></li>
-            </ul>
-
-            <section>
-                <h2 class="main_footerTitle2">ADDRESS</h2>
-                <address>
+            <div class="footer_infos col-l-6">
+            <section class="form_align sectAddress">
+                <h2 class="footer_title2">ADDRESS</h2>
+                <address class="form_list address">
                     9 rue Charles Deliège 4247 <br />
                     Fléron, TN 00000-0000
                 </address>
             </section>
 
-            <section>
-                <h2 class="main_footerTitle2e">PHONE</h2>
-                <ul>
+            <hr class="form_hr">
+
+            <section class="form_align">
+                <h2 class="footer_title2">PHONE</h2>
+                <ul class="form_list">
                     <li><a href="tel:(000)000-0000">(000)000-0000</a></li>
                 </ul>
             </section>
 
-            <section>
-                <h2 class="main_footerTitle2">EMAIL</h2>
-                <ul>
+            <hr class="form_hr">
+
+            <section class="form_align">
+                <h2 class="footer_title2">EMAIL</h2>
+                <ul class="form_list">
                     <li><a href="mailto:info@untitled.tld">info@untitled.tld</a></li>
                 </ul>
             </section>
 
-            <section>
-                <h2 class="main_footerTitle2">SOCIAL</h2>
-                <ul>
-                    <li><i class="fab fa-twitter"></i></li>
-                    <li><i class="fab fa-facebook-f"></i></li>
-                    <li><i class="fab fa-instagram"></i></li>
-                    <li><i class="fab fa-github"></i></li>
-                </ul>
-            </section>    
-        </footer>
-    </main>
+            <hr class="form_hr">
 
-    <footer>
-        <p>
-            &copy;UNTITLED | DESIGN: <a href="#">IEPS</a> 
-        </p>
+            <section class="form_align">
+                <h2 class="footer_title2">SOCIAL</h2>
+                <ul class="form_list">
+                    <li><a href="#"><i class="fab fa-twitter icon-surrounded"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook-f icon-surrounded fb"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram icon-surrounded"></i></a></li>
+                    <li><a href="#"><i class="fab fa-github icon-surrounded"></i></a></li>
+                </ul>
+            </section> 
+            </div>
+        </div>
+        
+
+        <div class="petitBoutFooter text-center">
+            &copy;UNTITLED | DESIGN: <a href="https://www.promotion-sociale.be/">IEPS</a> 
+        </div>
     </footer>
+
+    <script src="./js/app.scss"></script>
 </body>
 </html>

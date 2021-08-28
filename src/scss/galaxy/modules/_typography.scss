@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap');
+
+
+// TYPOGRAPHY's VARIABLES 
+//-------------------------------
+    // TEXT
+        $font_text: 'merriweather', georgia, serif;
+        $font_size_text: .8rem;
+        $font_weight_text: 300;
+        $line_height_text: 2.4em;
+        
+
+    // TITLES
+
+        $font_size_h1: 3rem;
+        $letter_spacing_h1: .2rem;
+
+        $font_size_h2: 1.4rem;
+        $letter_spacing_h2: .04rem;
+
+        $font_size_h3: 1rem;
+        $letter_spacing_h3: .04rem;
+
+        $font_size_h4: .8rem;
+        $letter_spacing_h4: .04rem;
+
+        $font_size_h5: .7rem;
+        $letter_spacing_h5: .04rem;
+
+        $font_size_h6: .6rem;
+        $letter_spacing_h6: .04rem;
+
+
+    // TITLES IN COMMON
+        $font_title: 'source sans pro', helvetica, sans-serif;
+        $font_weight_title: 900;
+
+
+    //TEXT AND TITLES IN COMMON
+        $font_color: $color_font;
+        $margin_right_font: .3em;
+        $margin_bottom_font: .7em;
+        $padding_font: 0 0 1em 0;
+        $uppercase_font: uppercase;
+
+
+    // BOLD AND STRONG TAGS
+        $bold_strong: $font_weight_title;
+
+
+    //LINK
+        $link_color: $font_color;
+        $link_decoration: underline dotted;
+
+        $link_hover_decoration: none;
+        $link_hover_color: $color_hover;
+
+
+    // CODE
+        $code_color: $color_neutral_2;
+        $code_background: $color_neutral_1;
+        $code_border: 1px solid #e6e7e8;
+        $code_padding: .3em .6em;
+
+    
+    // HR
+        $hr_height: 2px;
+        $hr_color: $color_neutral_1;
+        $hr_margin: 3em 0;
+
+    
+    // SUBTITLES
+        $subtitle_italic: italic;
+        $subtitle_padding: 0 0 1.5em 0;
+
+    
+    // ICONS
+        $icon_default_size: 20px;
+        $icon_thin_size: 12px;
+        $icon_surrounded: 2px solid #eae6e6;
+        $icon_surrounded_radius: 50%;
+        $padding_icon_radius: .5em;
+        
+
+    // BLOCKQUOTE
+        $border_blockquote: 4px solid $color_neutral_1;
+        $padding_border_blockquote: 1.5em 2.5em;
+        $margin_border_blockquote: 0;
+
+
+    // TABLEAUX
+        $table_width: 100%;
+        $table_impair_color: $color_neutral_1;
+        $border_table: 2px solid $color_neutral_1;
+        $padding_table: 1.5em 1em;
+
+
+    // BOX
+        $border_box: $icon_surrounded;
+        $box_padding: 2em;
+        
+
+
+// DEFAULT SPECIFICATIONS
+//-------------------------------
+body {
+    font-family: $font_text;
+    font-size: $font_size_text;
+    font-weight: $font_weight_text;
+    color: $font_color;
+}
+
+
+// ICONS
+i {
+    font-size: $icon_default_size;
+}
+
+.icon-surrounded {
+    font-size: $icon_thin_size;
+    border: $icon_surrounded;
+    border-radius: $icon_surrounded_radius;
+    padding: $padding_icon_radius;
+}
+
+
+// BOLD AND STRONG TAGS
+b, strong {
+    font-weight: $bold_strong;
+}
+
+
+// PARAGRAPHES
+p {
+    line-height: $line_height_text;
+}
+
+
+// LINKS
+a {
+    color: $link_color;
+    text-decoration: $link_decoration;
+    &:hover {
+        text-decoration: $link_hover_decoration;
+    }
+}
+
+
+// HR
+hr {
+    height: $hr_height;
+    background: $hr_color;
+    border: none;
+    margin: $hr_margin;
+}
+
+
+// CODE
+code {
+    color: $code_color;
+    background: $code_background;
+    border: $code_border;
+    padding: $code_padding;
+}
+
+
+// BLOCKQUOTE
+blockquote {
+    line-height: $line_height_text;
+    border-left: $border_blockquote;
+    padding: $padding_border_blockquote;
+    margin-left: $margin_border_blockquote;
+}
+
+
+// TABLEAUX
+table {
+    width: $table_width;
+    border-collapse: collapse;
+     tr th, tr td {
+       padding: $padding_table; 
+    }
+}
+
+tbody > tr:nth-child(odd) {
+    background: $table_impair_color;
+}
+
+.alternate-border > tr td {
+    border: $border_table;
+}
+
+
+// BOX
+.box {
+    border: $icon_surrounded;
+    padding: $box_padding;
+}
+
+
+// PREFORMATTED
+pre {
+    white-space: pre-wrap;
+    color: $code_color;
+    background: $code_background;
+    border: $code_border;
+    padding: $box_padding;
+}
+
+
+
+// TITLES
+h1, h2, h3, h4, h5, h6, .title2-infos {
+    font-family: $font_title;
+    text-transform: $uppercase_font;
+    font-weight: $font_weight_title;
+    margin-bottom: $margin_bottom_font;
+}
+
+h1, .h1 {
+    font-size: $font_size_h1;
+    letter-spacing: $letter_spacing_h1;
+}
+
+h2, .h2 {
+    font-size: $font_size_h2;
+    letter-spacing: $letter_spacing_h2;
+}
+
+h3, .h3 {
+    font-size: $font_size_h3;
+    letter-spacing: $letter_spacing_h3;
+}
+
+h4, .h4 {
+    font-size: $font_size_h4;
+    letter-spacing: $letter_spacing_h4;
+}
+
+h5, .h5 {
+    font-size: $font_size_h5;
+    letter-spacing: $letter_spacing_h5;
+}
+
+h6, .h6 {
+    font-size: $font_size_h6;
+    letter-spacing: $letter_spacing_h6;
+}
+
+
+// SUBTITLES
+.subtitle {
+    font-style: $subtitle_italic;
+    padding: $subtitle_padding;
+}
+
+.padding_bottom {
+    padding: $padding_font;
+}
+
